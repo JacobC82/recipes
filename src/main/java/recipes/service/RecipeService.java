@@ -22,7 +22,6 @@ public class RecipeService {
 		String content = readFileContent(fileName);
 		List<String> sqlStatements = convertContentToSqlStatements(content);
 		
-		sqlStatements.forEach(line -> System.out.println(line));
 		
 		recipeDao.executeBatch(sqlStatements);
 	}
@@ -86,7 +85,7 @@ public class RecipeService {
 		}
 	}
 	
-	public static void main(String[] args) {
-		new RecipeService().createAndPopulateTables();
-	}
+	//public static void main(String[] args) {
+		//new RecipeService().createAndPopulateTables();
+	//}
 }

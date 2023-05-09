@@ -77,6 +77,7 @@ public class Recipes {
 		}
 	}
 
+	@SuppressWarnings("unused")
 	private Double getDoubleInput(String prompt) {
 		String input = getStringInput(prompt);
 
